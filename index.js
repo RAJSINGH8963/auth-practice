@@ -8,6 +8,10 @@ const PORT = process.env.Port || 4000 ;
 
 // cookies-parser what is this and why we need this ?  
 
+const cookieParser = require("cookie-parser");
+
+app.use(cookieParser());
+app.use(express.json());
 
 app.use(express.json());
 
